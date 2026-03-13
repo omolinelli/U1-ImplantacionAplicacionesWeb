@@ -67,3 +67,39 @@ Para garantizar que su servidor Nginx y su tienda operen de manera ininterrumpid
     Transferencia Segura de Archivos: Toda administración y subida de archivos al servidor se realizará mediante SFTP (basado en SSH), el cual cifra la conexión de extremo a extremo, descartando el uso del obsoleto y vulnerable protocolo FTP.
     Copias de Seguridad (Backups): Configuraremos copias de seguridad automáticas y regulares del servidor y la base de datos, garantizando que, ante cualquier falla o ataque, la información de la empresa pueda recuperarse inmediatamente.
     Actualizaciones Constantes: Se establecerá un cronograma de mantenimiento para aplicar parches de seguridad y actualizar el sistema operativo, el software Nginx y los componentes dinámicos de la web, cerrando así la puerta a posibles vulnerabilidades.
+
+## Instrucciones para Ejecutar el Proyecto
+
+Este proyecto implementa una tienda online básica utilizando Node.js y Express, con una base de datos SQLite en memoria.
+
+### Requisitos
+- Node.js instalado
+- npm
+
+### Instalación
+1. Instalar dependencias: `npm install`
+
+### Ejecución
+1. Iniciar el servidor: `npm start` o `node server.js`
+2. Abrir el navegador en `http://localhost:3000`
+
+### Estructura del Proyecto
+- `server.js`: Servidor backend con Express
+- `public/index.html`: Página principal
+- `public/styles.css`: Estilos CSS
+- `public/app.js`: Lógica JavaScript del frontend
+- `package.json`: Configuración del proyecto
+
+La aplicación incluye un catálogo de productos, carrito de compras y checkout básico.
+
+## Instrucciones para Ejecutar el Proyecto
+
+### Opción 1: Con Docker (Recomendado)
+1. Asegúrate de tener Docker y Docker Compose instalados.
+2. Construye y ejecuta la aplicación: `docker-compose up --build`
+3. Abre el navegador en `http://localhost:3000`
+
+### Opción 2: Sin Docker
+1. Instala dependencias: `npm install`
+2. Inicia el servidor: `npm start`
+3. Abre el navegador en `http://localhost:3000`
